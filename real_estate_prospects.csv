@@ -2002,3 +2002,5 @@ id;age;income;marital_status;children;budget;city;property_type;bought
 2001;23.0;0.0;single;2.0;20000.0;Rabat;Apartment;0
 2002;23.0;200000.0;married;2.0;150000.0;Marrakech;Duplex;0
 2003;45.0;25000.0;married;2.0;2000000.0;Tangier;villa;1
+2004;23.0;25000.0;single;0.0;30000.0;Marrakech;duplex;0
+2005;25.0;15000.0;married;2.0;25000.0;Tangier;apartment;0
