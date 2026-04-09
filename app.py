@@ -20,18 +20,18 @@ if "page" not in st.session_state:
 col1, col2, col3 = st.columns([2,5,2])
 
 with col1:
-    st.markdown("### 🏠 AI Real Estate")
+    st.markdown("###  AI Real Estate")
 
 with col2:
     c1, c2, c3 = st.columns(3)
 
-    if c1.button("🏠 Home"):
+    if c1.button(" Home"):
         st.session_state.page = "Home"
 
-    if c2.button("📊 Dashboard"):
+    if c2.button(" Dashboard"):
         st.session_state.page = "Dashboard"
 
-    if c3.button("📋 Dataset"):
+    if c3.button(" Dataset"):
         st.session_state.page = "Dataset"
 
 
@@ -61,11 +61,11 @@ def load_data():
 data = load_data()
 
 # =============================
-# 🏠 HOME
+#  HOME
 # =============================
 if st.session_state.page == "Home":
 
-    st.markdown("## 🧠 AI Real Estate Predictor")
+    st.markdown("##  AI Real Estate Predictor")
 
     col1, col2 = st.columns(2)
 
@@ -94,7 +94,7 @@ if st.session_state.page == "Home":
 
     st.markdown("---")
 
-    if st.button("🔮 Predict Prospect"):
+    if st.button(" Predict Prospect"):
 
         df = pd.DataFrame({
             "age":[age],
@@ -140,11 +140,11 @@ if st.session_state.page == "Home":
             st.warning("⚠️ Close Excel file")
 
 # =============================
-# 📊 DASHBOARD PRO
+#  DASHBOARD PRO
 # =============================
 elif st.session_state.page == "Dashboard":
 
-    st.markdown("## 📊 Advanced Dashboard")
+    st.markdown("##  Advanced Dashboard")
 
     if len(data) == 0:
         st.warning("No data available")
@@ -225,11 +225,11 @@ elif st.session_state.page == "Dashboard":
             donut(df["city"].value_counts())
 
 # =============================
-# 📋 DATASET
+#  DATASET
 # =============================
 elif st.session_state.page == "Dataset":
 
-    st.markdown("## 📋 Dataset")
+    st.markdown("##  Dataset")
 
     search = st.text_input("Search by city")
 

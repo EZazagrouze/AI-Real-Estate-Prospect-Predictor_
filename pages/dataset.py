@@ -8,7 +8,7 @@ st.set_page_config(page_title="Dataset", layout="wide")
 # -----------------------------
 st.markdown("""
     <h1 style='text-align: center; color: #00C9A7;'>
-    📊 Dataset Analysis
+     Dataset Analysis
     </h1>
     <p style='text-align: center;'>
     Explore and analyze real estate prospects
@@ -31,9 +31,9 @@ data.columns = data.columns.str.strip()
 # -----------------------------
 # SIDEBAR FILTERS
 # -----------------------------
-st.sidebar.header("🔧 Filters")
+st.sidebar.header(" Filters")
 
-search = st.sidebar.text_input("🔍 Search by city")
+search = st.sidebar.text_input(" Search by city")
 
 city_filter = st.sidebar.multiselect(
     "City",
@@ -76,17 +76,17 @@ if search:
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("📍 Relationship (Scatter)")
+    st.subheader(" Relationship (Scatter)")
     st.scatter_chart(filtered_data[[x_axis, y_axis]])
 
 with col2:
-    st.subheader("📊 Avg Budget by City")
+    st.subheader(" Avg Budget by City")
     st.bar_chart(filtered_data.groupby("city")["budget"].mean())
 
 # -----------------------------
 # TABLE
 # -----------------------------
-st.markdown("### 📋 Filtered Dataset")
+st.markdown("###  Filtered Dataset")
 st.dataframe(filtered_data)
 
 # -----------------------------

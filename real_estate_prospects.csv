@@ -2027,3 +2027,6 @@ id;age;income;marital_status;children;budget;city;property_type;bought
 2026;49.0;250000.0;single;0.0;4500.0;Marrakech;apartment;0
 2027;18.0;0.0;single;0.0;0.0;Rabat;apartment;0
 2028;18.0;25000.0;married;2.0;35000.0;Casablanca;villa;0
+2029;18.0;0.0;single;0.0;0.0;Rabat;apartment;0
+2030;18.0;0.0;single;0.0;0.0;Rabat;apartment;0
+2031;18.0;0.0;single;0.0;0.0;Rabat;apartment;0
